@@ -1,0 +1,94 @@
+#tabane{
+    -fx-tab-min-height:11em;
+    -fx-tab-max-height: 11em;
+    -fx-tab-min-width: 40em;
+    -fx-tab-max-width: 40em;
+    -fx-padding: 0 -1 -1 0
+}/*
+#cherry{
+    -fx-image: url("robotsearch.png");
+    -fx-smooth: true;
+}
+#carry{-fx-image: url("robot.png");
+-fx-smooth: true;}
+#stat{-fx-image: url("stat.png");
+    -fx-smooth: true;}
+#world{-fx-image: url("world.png");
+    -fx-smooth: true;}
+#swarm{-fx-image: url("swarm.png");
+    -fx-smooth: true;
+}*/
+
+#tab1{
+
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-padding: 0 10 0 10;
+}
+#tab2{
+
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-padding: 0 10 0 10;
+}
+#tab3{
+
+    -fx-background-color: #FFFFFF;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-padding: 0 10 0 10;
+}
+#tab1:selected
+{
+    -fx-background-color: #000;
+    -fx-text-fill: #FFFFFF;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 5 0;
+    -fx-border-color: #4B0082;
+
+}
+#tab2:selected
+{
+    -fx-background-color: #F2FEFA;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 5 0;
+    -fx-border-color: #4B0082;
+
+}
+#tab3:selected
+{
+    -fx-background-color: #F2FEFA;
+    -fx-background-radius: 0;
+    -fx-background-insets: 0;
+    -fx-border-width: 0 0 5 0;
+    -fx-border-color: #4B0082;
+
+}
+
+/*.tab{
+
+    -fx-background-color:#05D39B;
+    -fx-background-insets: 0.0;
+    -fx-background-radius: 0.0;
+    -fx-padding: 0 10 0 10;
+}
+*/
+.tab-pane:left *.tab-header-area
+{
+    -fx-background-insets: 0, 0 0 10;
+    -fx-padding: 0.0em 0.0em 0.0em 0.0em;
+    -fx-background-color: #F2FEFA;
+}
+.tab-pane *.tab-header-background {
+    -fx-background-color:#000000 /*-fx-outer-border, -fx-inner-border, derive(-fx-color, -20%);*
+    -fx-effect: innershadow(two-pass-box , rgba(0,0,0,0.6) , 4, 0.0 , 0 , 0);*/
+}
+/*
+#start{-fx-image: url("start.png");
+    -fx-smooth: true;}
+#meta{-fx-image: url("ewswa3.png");
+    -fx-smooth: true;}*/

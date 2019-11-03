@@ -1,0 +1,60 @@
+package bso;
+
+import GA.GA;
+import GA.Solution;
+import environnement.Dataset;
+import environnement.Parsing;
+
+import java.io.IOException;
+import java.util.ArrayList;
+
+public class Test {
+
+    public static void main(String[] args) {
+
+        /***ampirical parameters***/
+        int size = 300;
+        int MaxIter = 1000;
+        int nbrTarget = 3;
+        int flip = 7;
+        int MaxChances = 3;
+        int PORTEE=20;
+        int nbrBees=10;
+        int localSize=10;
+
+
+
+        //Dataset env;
+        //Dataset env = new Dataset(size,nbrTarget,PORTEE);
+        //env.display();
+
+        //parsing
+        Dataset env = new Dataset();
+        Parsing ps = new Parsing ();
+        try {
+            ps.parsing (  "../Simulator/Nb_target/"+nbrTarget+"/mat0/target"+nbrTarget+".txt");
+            env = new Dataset(ps);
+        } catch (IOException e) {
+            e.printStackTrace ( );
+        }
+
+        /** BSO **/
+        //BSO bso = new BSO();
+        //Solution sol = new Solution(MaxIter, flip, MaxChances,nbrBees,localSize);
+        //bso.SetParametersvector(sol.getParameters());
+        //String s = bso.exe(env, nbrTarget).toString();
+        //System.out.println("Solution:"+s);
+
+        /** nBSO **/
+        nBSO nbso = new nBSO();
+        Solution nsol = new Solution(MaxIter, flip, MaxChances,nbrBees,localSize);
+        nbso.SetParametersvector(nsol.getParameters());
+        ArrayList<Position> poss = nbso.exe(env, nbrTarget);
+        System.out.println("Solution: "+poss);
+
+        /** GA **/
+        //GA genetic = new GA ( 15,10,0 ,2);
+        //genetic.GA ( nbrTarget,  env);
+    }
+
+}

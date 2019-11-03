@@ -1,0 +1,68 @@
+\chapter*{Conclusion générale et perspectives}
+ \addcontentsline{toc}{chapter}{Conclusion générale et perspectives}
+ 
+ \label{Conclustion}
+ 
+La recherche de cibles reste un problème attractif, sujet à de multiples propositions de résolution qui ont souvent recours aux systèmes multi-robots. Ces derniers se trouvant dans des environnements complexes et inconnus, doivent être dotés d'une stratégie d'évitement d'obstacles pour évoluer dans un monde inconnu dans lequel ils doivent chercher des cibles.
+
+Le développement de méthodes de recherche efficaces, optimisées et rapides est une nécessité dans laquelle s'inscrit notre travail.\\
+
+
+Pour ce faire, il nous a fallu en premier lieu nous familiariser avec le domaine de la recherche de cibles et avec ses nombreuses variantes et paramètres. Cette étape nous a permis de définir dans quelle branche notre présent projet prend place. Par la suite nous avons présenté une synthèse de quelques travaux relatifs à notre problématique, pour mieux cerner le problème et nous informer des méthodes les plus adaptées à sa résolution.\\
+
+En second lieu nous nous sommes penchées sur les outils de résolution basés sur l'intelligence en essaim, à savoir les méta-heuristiques s’inspirant des abeilles (BSO et Multi-BSO) et des éléphants (EHO et ESWSA) ou encore de la génétique (GA). Ce choix fut motivé par les caractéristiques de ces différentes méthodes qui s’adaptent au mieux à la formulation du problème auquel nous sommes confrontées.
+
+Par ailleurs, nous avons clairement défini notre modélisation par rapport à l'environnement, aux cibles et aux robots. Puis il nous a fallu choisir une stratégie d’évitement d’obstacles conforme à cette modélisation. Ce choix s’est porté sur la méthode d’échantillonnage, pour enfin décrire formellement le fonctionnement des quatre approches de recherche qui constituent nos deux contributions majeures, ainsi que  l’algorithme génétique mis à profit pour le réglage automatique des paramètres. 
+
+À l’issue de cette phase, nous sommes passées à l’implémentation de nos algorithmes sur machine.
+
+Pour visualiser et suivre la recherche, étape par étape, nous avons mis en place un simulateur temps réel, exploitant le multi-threading pour permettre une application fluide.\\
+
+Enfin, l'évaluation de nos approches a été appuyée par des expérimentations multiples et répétées, réalisées de manière comparative, qui ont montré leur efficacité et leur fiabilité. L'analyse de nos résultats, nous a permis de mettre en évidence les avantages et les inconvénients de chaque approche. Notre ambition est d'exploiter ces différentes approches à travers une hybridation des quatre algorithmes basés essaim, ne retenant que les atouts de chacun, pour optimiser au mieux les résultats de notre recherche.
+
+Pour résumer, dans le présent travail nous avons développé les modules suivants:
+\begin{itemize}
+	\item[$\bullet$] Un générateur d'environnement de recherche.
+	\item[$\bullet$] L'approche BSO pour la recherche de cibles. 
+	\item[$\bullet$] L'approche Multi-BSO pour la recherche de cibles. 
+	\item[$\bullet$] L'approche EHO pour la recherche de cibles.
+	
+	\item[$\bullet$] L'approche ESWSA pour la recherche de cibles.
+	\item[$\bullet$] L'algorithme GA de paramétrage.
+	
+	\item[$\bullet$] La stratégie d'évitement d'obstacles et de simulation du déplacement des robots. 
+	
+	\item[$\bullet$] L'auto-génération des expérimentations en graphiques.
+	
+	\item[$\bullet$] Un simulateur de recherche temps réel.\\
+	
+\end{itemize}
+
+
+Néanmoins, nous pensons déjà à quelques améliorations que nous avons en perspective, dont nous citerons :
+
+	
+\paragraph{L'adaptation de la recherche aux cibles mobiles :}
+Les cibles mobiles requièrent une première étape de détection comme vue dans le présent travail, mais aussi un suivi de ces cibles, car leurs positions changent dans le temps.
+
+\paragraph{La prise en charge des obstacles mobiles :} 
+L'adaptation de notre stratégie d'évitement d'obstacles par échantillonnage aux obstacles mobiles, tels que: les êtres humains, animaux, voitures, ...), car cela nous permet de nous rapprocher de la complexité réelle du monde dans lequel nous vivons. 
+
+\paragraph{Passer à la version multi-agents de nos approches :}
+Afin de bénéficier du parallélisme dont devrait disposer un système multi-robots ainsi que d'une coopération plus réaliste.
+
+\paragraph{Hybridation des approches :} Les résultats obtenus nous ont permis d'extraire les points forts de chaque approche, par exemple:
+\begin{description}
+	\item[EHO]: L'organisation des robots en plusieurs clans, mais aussi l'opérateur de séparation qui permet la diversification lors de la recherche.
+	\item[BSO]: Le flip, permettant un espacement homogène entre les robots, ce qui réduit la recherche redondante des robots pour une même zone. Ainsi que le critère de diversité comme solution à la stagnation.
+	\item[ESWSA]: W$^t$ pour la gestion de la vitesse des déplacements. Le déplacement de manière continue grâce à la vélocité. 
+	\item[Multi-BSO] : Liste Tabou commune à tous les groupes de robots, exploitée comme un tableau noir.
+\end{description}
+
+
+
+\paragraph{Partitionnement de l'environnement,} en affectant des équipes de robots à chaque partition, ce qui permettra de réduire à zéro le repassage des groupes de robots par les mêmes partitions.
+
+
+
+

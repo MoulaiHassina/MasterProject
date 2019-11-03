@@ -1,0 +1,1078 @@
+% Appendix A
+
+\chapter{Paramétrage des métaheuristiques} % Main appendix title
+
+\label{AppendixB} % For referencing this appendix elsewhere, use \ref{AppendixA}
+Dans ce qui suit nous allons présenter les paramètres résultant du réglage avec GA pour chaque type d'environnement.\\
+
+Le paramètre \textbf{MaxItér} est le même pour toutes les approches égale à 1000.
+
+\section{Environnements simples (sans obstacles)}
+\subsection{Expérimentations par rapport à la portée des cibles}
+\subsubsection{Paramétrage de BSO} 
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Mono-cible:} \\
+	flip: 15 ,MaxChance: 2 ,nbrBees: 15\\
+	flip: 18 ,MaxChance: 2 ,nbrBees: 13\\
+	flip: 16 ,MaxChance: 2 ,nbrBees: 13\\
+	flip: 18 ,MaxChance: 1 ,nbrBees: 15\\
+	flip: 22 ,MaxChance: 2 ,nbrBees: 14\\
+	flip: 21 ,MaxChance: 1 ,nbrBees: 12\\
+	flip: 21 ,MaxChance: 1 ,nbrBees: 13\\
+	flip: 21 ,MaxChance: 1 ,nbrBees: 12\\
+	flip: 18 ,MaxChance: 2 ,nbrBees: 12\\
+	flip: 25 ,MaxChance: 1 ,nbrBees: 11\\
+\end{minipage}\hfill
+\hspace{0.5cm}
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Multi-cible}\\
+	flip: 15 ,MaxChance: 2 ,nbrBees: 7\\
+	flip: 16 ,MaxChance: 1 ,nbrBees: 5\\
+	flip: 28 ,MaxChance: 2 ,nbrBees: 8\\
+	flip: 22 ,MaxChance: 1 ,nbrBees: 9\\
+	flip: 20 ,MaxChance: 2 ,nbrBees: 11\\
+	flip: 17 ,MaxChance: 2 ,nbrBees: 12\\
+	flip: 16 ,MaxChance: 3 ,nbrBees: 14\\
+	flip: 19 ,MaxChance: 1 ,nbrBees: 13\\
+	flip: 18 ,MaxChance: 2 ,nbrBees: 13\\
+	flip: 21 ,MaxChance: 1 ,nbrBees: 13\\
+\end{minipage}\hfill
+
+
+
+
+\subsubsection{Paramétrage de MBSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	flip: 16,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+	flip: 19,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+	flip: 17,MaxCh: 3,nbrBees: 4,nbSwarm: 3\\
+	flip: 21,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+	flip: 23,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+	flip: 19,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+	flip: 22,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+	flip: 20,MaxCh: 1,nbrBees: 4,nbSwarm: 3\\
+	flip: 19,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+	flip: 18,MaxCh: 1,nbrBees: 4,nbSwarm: 3\\
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	flip: 20,MaxCh: 3,nbrBees: 3,nbSwarm: 4\\
+	flip: 19,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+	flip: 20,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+	flip: 21,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+	flip: 20,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+	flip: 19,MaxCh: 2,nbrBees: 3,nbSwarm: 3\\
+	flip: 17,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+	flip: 17,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+	flip: 15,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+	flip: 16,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+\end{minipage}\hfill
+
+
+
+
+\subsubsection{Paramétrage de EHO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	nbrClan: 4, nbrEle: 3, alpha: 0.5, beta: 0.5\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.5, beta: 0.4\\
+	nbrClan: 3, nbrEle: 3, alpha: 0.5, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.6, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.6\\
+	nbrClan: 3, nbrEle: 3, alpha: 0.4, beta: 0.5\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.5, beta: 0.5\\
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.5\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.4\\
+	nbrClan: 3 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.3\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.6\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.6 ,beta: 0.4\\
+	nbrClan: 3 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.3\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.4\\
+	nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.5\\
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de ESWSA}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	nbEle: 16 , wt: 0.2 , p: 0.5\\
+	nbEle: 15 , wt: 0.3 , p: 0.4\\
+	nbEle: 15 , wt: 0.5 , p: 0.4\\
+	nbEle: 15 , wt: 0.4 , p: 0.5\\
+	nbEle: 14 , wt: 0.3 , p: 0.6\\
+	nbEle: 11 , wt: 0.5 , p: 0.4\\
+	nbEle: 12 , wt: 0.3 , p: 0.4\\
+	nbEle: 10 , wt: 0.5 ,  p: 0.3\\
+	nbEle: 11 , wt: 0.4 , p: 0.6\\
+	nbEle: 10 , wt: 0.4 , p: 0.5\\
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	nbEle: 16 , wt: 0.5 , p: 0.7\\
+	nbEle: 16 , wt: 0.4 , p: 0.6\\
+	nbEle: 16 , wt: 0.2 , p: 0.5\\
+	nbEle: 16 , wt: 0.5 , p: 0.5\\
+	nbEle: 16 , wt: 0.3 , p: 0.3\\
+	nbEle: 15 , wt: 0.5 , p: 0.4\\
+	nbEle: 15 , wt: 0.4 , p: 0.5\\
+	nbEle: 15 , wt: 0.3 , p: 0.3\\
+	nbEle: 13 , wt: 0.5 , p: 0.3\\
+	nbEle: 14 , wt: 0.2 , p: 0.4\\
+	
+\end{minipage}\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Expérimentations par rapport à la taille des environnements}
+\subsubsection{Paramétrage de BSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	flip: 21 ,MaxChance: 2 ,nbrBees: 10\\
+	flip: 21 ,MaxChance: 1 ,nbrBees: 12\\
+	flip: 19 ,MaxChance: 1 ,nbrBees: 11\\
+	flip: 20 ,MaxChance: 1 ,nbrBees: 15\\
+	flip: 17 ,MaxChance: 1 ,nbrBees: 16\\
+	flip: 18 ,MaxChance: 1 ,nbrBees: 16\\
+	flip: 19 ,MaxChance: 1 ,nbrBees: 16\\
+	flip: 15 ,MaxChance: 1 ,nbrBees: 16\\
+	flip: 14 ,MaxChance: 2 ,nbrBees: 18\\
+	flip: 10 ,MaxChance: 1 ,nbrBees: 17\\
+	
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	flip: 20 ,MaxChance: 2 ,nbrBees: 8\\
+	flip: 18 ,MaxChance: 1 ,nbrBees: 11\\
+	flip: 18 ,MaxChance: 2 ,nbrBees: 11\\
+	flip: 17 ,MaxChance: 2 ,nbrBees: 12\\
+	flip: 18 ,MaxChance: 1 ,nbrBees: 11\\
+	flip: 16 ,MaxChance: 1 ,nbrBees: 13\\
+	flip: 15 ,MaxChance: 1 ,nbrBees: 17\\
+	flip: 16 ,MaxChance: 1 ,nbrBees: 21\\
+	flip: 17 ,MaxChance: 2 ,nbrBees: 23\\
+	flip: 20 ,MaxChance: 1 ,nbrBees: 23\\
+	
+\end{minipage}\hfill
+
+
+
+\subsubsection{Paramétrage de MBSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	flip: 10 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 3\\
+	flip: 17 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 3\\
+	flip: 19 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 3\\
+	flip: 21 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	flip: 20 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 3\\
+	flip: 25 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	flip: 30 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	flip: 38 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 5\\
+	flip: 41 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 5\\
+	flip: 47 ,MaxCh: 1 ,nbrBees: 5 ,nbSwarm: 5\\
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	flip: 12 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+	flip: 18 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+	flip: 15 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4\\
+	flip: 19 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+	flip: 22 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	flip: 28 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	flip: 37 ,MaxCh: 2 ,nbrBees: 5 ,nbSwarm: 4\\
+	flip: 40 ,MaxCh: 1 ,nbrBees: 5 ,nbSwarm: 5\\
+	flip: 40 ,MaxCh: 1 ,nbrBees: 5 ,nbSwarm: 5\\
+	flip: 43 ,MaxCh: 2 ,nbrBees: 5 ,nbSwarm: 5\\
+	
+	
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de EHO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	nbrClan: 3,nbrEle: 3,alpha: 0.6,beta: 0.3\\
+	nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.3\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.4\\
+	nbrClan: 3,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+	nbrClan: 3,nbrEle: 4,alpha: 0.5,beta: 0.5\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.3\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	nbrClan: 4,nbrEle: 4,alpha: 0.6,beta: 0.5\\
+	nbrClan: 4,nbrEle: 4,alpha: 0.5,beta: 0.3\\
+	
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	nbrClan: 3,nbrEle: 3,alpha: 0.6,beta: 0.3\\
+	nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	nbrClan: 3,nbrEle: 4,alpha: 0.5,beta: 0.5\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.5\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.2,beta: 0.4\\
+	nbrClan: 4,nbrEle: 3,alpha: 0.3,beta: 0.4\\
+	nbrClan: 4,nbrEle: 4,alpha: 0.4,beta: 0.6\\
+	nbrClan: 5,nbrEle: 4,alpha: 0.4,beta: 0.4\\
+	
+	
+	
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de ESWSA}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	nbEle: 12 , wt: 0.5 , p: 0.2\\
+	nbEle: 15 , wt: 0.5 , p: 0.3\\
+	nbEle: 15 , wt: 0.4 , p: 0.3\\
+	nbEle: 14 , wt: 0.4 , p: 0.4\\
+	nbEle: 14 , wt: 0.5 , p: 0.5\\
+	nbEle: 16 , wt: 0.4 , p: 0.5\\
+	nbEle: 18 , wt: 0.5 , p: 0.4\\
+	nbEle: 19 , wt: 0.5 , p: 0.4\\
+	nbEle: 18 , wt: 0.6 , p: 0.4\\
+	nbEle: 21 , wt: 0.5 , p: 0.3\\
+	
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	nbEle: 17 , wt: 0.4 , p: 0.4\\
+	nbEle: 18 , wt: 0.4 , p: 0.3\\
+	nbEle: 17 , wt: 0.4 , p: 0.4\\
+	nbEle: 17 , wt: 0.4 , p: 0.5\\
+	nbEle: 17 , wt: 0.5 , p: 0.4\\
+	nbEle: 18 , wt: 0.5 , p: 0.4\\
+	nbEle: 18 , wt: 0.4 , p: 0.4\\
+	nbEle: 19 , wt: 0.2 , p: 0.5\\
+	nbEle: 20 , wt: 0.5 , p: 0.4\\
+	nbEle: 20 , wt: 0.4 , p: 0.5\\
+	
+	
+	
+	
+\end{minipage}\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Expérimentations par rapport au nombre de cible}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\subsubsection{Paramétrage de BSO}
+\vspace{-0.5cm}
+\textbf{}\\
+flip: 13 ,MaxChance: 2 ,nbrBees: 13\\
+flip: 13 ,MaxChance: 1 ,nbrBees: 13\\
+flip: 15 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 16 ,MaxChance: 1 ,nbrBees: 16\\
+flip: 17 ,MaxChance: 2 ,nbrBees: 17\\
+flip: 17 ,MaxChance: 3 ,nbrBees: 17\\
+flip: 18 ,MaxChance: 1 ,nbrBees: 17\\
+flip: 18 ,MaxChance: 2 ,nbrBees: 18 
+\end{minipage}\hfill
+\hspace{0.5cm}
+\begin{minipage}[t]{0.6\textwidth}
+\subsubsection{Paramétrage de MBSO}
+\vspace{-0.5cm}
+\textbf{}\\
+flip: 18 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+flip: 19 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 3\\
+flip: 17 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 34\\
+flip: 16 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 3\\
+flip: 16 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 3\\
+flip: 18 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+flip: 18 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+flip: 20 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4
+\end{minipage}\hfill
+
+
+
+\textbf{}
+
+
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+\subsubsection{Paramétrage de EHO}
+\vspace{-0.5cm}
+\textbf{}\\
+nbrClan: 3 ,nbrEle: 3 ,alpha: 0.6 ,beta: 0.54\\
+nbrClan: 3 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.5\\
+nbrClan: 3 ,nbrEle: 4 ,alpha: 0.6 ,beta: 0.4\\
+nbrClan: 3 ,nbrEle: 4 ,alpha: 0.6 ,beta: 0.3\\
+nbrClan: 4 ,nbrEle: 2 ,alpha: 0.4 ,beta: 0.4\\
+nbrClan: 3 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.6\\
+nbrClan: 4 ,nbrEle: 3 ,alpha: 0.6 ,beta: 0.3\\
+nbrClan: 4 ,nbrEle: 4 ,alpha: 0.5 ,beta: 0.3
+\end{minipage}\hfill
+\begin{minipage}[t]{0.4\textwidth}
+\subsubsection{Paramétrage de ESWSA}
+\vspace{-0.5cm}
+\textbf{}\\
+nbrEle: 14 ,wt: 0.3 ,p: 0.5\\
+nbrEle: 16 ,wt: 0.5 ,p: 0.3\\
+nbrEle: 17 ,wt: 0.4 ,p: 0.3\\
+nbrEle: 17 ,wt: 0.4 ,p: 0.3\\
+nbrEle: 18 ,wt: 0.4 ,p: 0.4\\
+nbrEle: 17 ,wt: 0.5 ,p: 0.3\\
+nbrEle: 19 ,wt: 0.4 ,p: 0.5\\
+nbrEle: 18 ,wt: 0.5 ,p: 0.4 
+\end{minipage}\hfill
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+%\newpage
+\textbf{ }\\
+\section{Environnements avec obstacles}
+\subsection{Expérimentations par rapport à la portée des cibles}
+\subsubsection{Paramétrage de BSO} 
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Mono-cible:} \\
+	flip: 17 ,MaxChance: 1 ,nbrBees: 14\\
+	flip: 17 ,MaxChance: 2 ,nbrBees: 15\\
+	flip: 18 ,MaxChance: 2 ,nbrBees: 12\\
+	flip: 19 ,MaxChance: 2 ,nbrBees: 14\\
+	flip: 20 ,MaxChance: 2 ,nbrBees: 14\\
+	flip: 21 ,MaxChance: 2 ,nbrBees: 15\\
+	flip: 20 ,MaxChance: 1 ,nbrBees: 15\\
+	flip: 20 ,MaxChance: 1 ,nbrBees: 12\\
+	flip: 19 ,MaxChance: 2 ,nbrBees: 13\\
+	flip: 19 ,MaxChance: 2 ,nbrBees: 12\\
+\end{minipage}\hfill
+\hspace{0.5cm}
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Multi-cible}\\
+	flip: 21 ,MaxChance: 3 ,nbrBees: 9\\
+	flip: 13 ,MaxChance: 2 ,nbrBees: 7\\
+	flip: 30 ,MaxChance: 2 ,nbrBees: 6\\
+	flip: 24 ,MaxChance: 2 ,nbrBees: 7\\
+	flip: 20 ,MaxChance: 3 ,nbrBees: 13\\
+	flip: 16 ,MaxChance: 3 ,nbrBees: 10\\
+	flip: 17 ,MaxChance: 1 ,nbrBees: 15\\
+	flip: 19 ,MaxChance: 2 ,nbrBees: 15\\
+	flip: 19 ,MaxChance: 1 ,nbrBees: 13\\
+	flip: 17 ,MaxChance: 1 ,nbrBees: 14\\
+\end{minipage}\hfill
+
+
+
+
+\subsubsection{Paramétrage de MBSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	flip: 21,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+	flip: 20,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+	flip: 18,MaxCh: 2,nbrBees: 3,nbSwarm: 3\\
+	flip: 20,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+	flip: 21,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+	flip: 17,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+	flip: 21,MaxCh: 1,nbrBees: 4,nbSwarm: 3\\
+	flip: 21,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+	flip: 22,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+	flip: 19,MaxCh: 1,nbrBees: 4,nbSwarm: 3\\
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	flip: 21,MaxCh: 3,nbrBees: 4,nbSwarm: 4\\
+	flip: 15,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+	flip: 18,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+	flip: 19,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+	flip: 18,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+	flip: 19,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+	flip: 19,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+	flip: 18,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+	flip: 18,MaxCh: 2,nbrBees: 3,nbSwarm: 3\\
+	flip: 18,MaxCh: 2,nbrBees: 3,nbSwarm: 3\\
+\end{minipage}\hfill
+
+
+
+
+\subsubsection{Paramétrage de EHO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	nbrClan: 4, nbrEle: 3, alpha: 0.5, beta: 0.5\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.5, beta: 0.4\\
+	nbrClan: 3, nbrEle: 3, alpha: 0.5, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.6, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.4\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.4, beta: 0.6\\
+	nbrClan: 3, nbrEle: 3, alpha: 0.4, beta: 0.5\\
+	nbrClan: 4, nbrEle: 3, alpha: 0.5, beta: 0.5\\
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.5\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.4\\
+	 nbrClan: 3 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.3\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.6\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.6 ,beta: 0.4\\
+	 nbrClan: 3 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.3\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.4\\
+	 nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.5\\
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de ESWSA}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	 nbrEle: 16 , wt: 0.4 , p: 0.5\\
+	 nbrEle: 15 , wt: 0.4 , p: 0.5\\
+	 nbrEle: 17 , wt: 0.5 , p: 0.4\\
+	 nbrEle: 14 , wt: 0.5 , p: 0.6\\
+	 nbrEle: 15 , wt: 0.5 , p: 0.4\\
+	 nbrEle: 11 , wt: 0.5 , p: 0.4\\
+	 nbrEle: 15 , wt: 0.4 , p: 0.4\\
+	 nbrEle: 9 , wt: 0.5 ,  p: 0.4\\
+	 nbrEle: 13 , wt: 0.4 , p: 0.6\\
+	 nbrEle: 10 , wt: 0.5 , p: 0.6\\
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	 nbrEle: 20 , wt: 0.5 , p: 0.6\\
+	 nbrEle: 16 , wt: 0.4 , p: 0.6\\
+	 nbrEle: 20 , wt: 0.4 , p: 0.4\\
+	 nbrEle: 19 , wt: 0.5 , p: 0.5\\
+	 nbrEle: 20 , wt: 0.4 , p: 0.5\\
+	 nbrEle: 19 , wt: 0.5 , p: 0.4\\
+	 nbrEle: 16 , wt: 0.4 , p: 0.5\\
+	 nbrEle: 15 , wt: 0.4 , p: 0.4\\
+	 nbrEle: 18 , wt: 0.5 , p: 0.3\\
+	 nbrEle: 15 , wt: 0.4 , p: 0.5\\
+
+\end{minipage}\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Expérimentations par rapport à la taille des environnements}
+\subsubsection{Paramétrage de BSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	 flip: 19 ,MaxChance: 1 ,nbrBees: 12\\
+	 flip: 18 ,MaxChance: 2 ,nbrBees: 14\\
+	 flip: 15 ,MaxChance: 2 ,nbrBees: 15\\
+	 flip: 17 ,MaxChance: 1 ,nbrBees: 16\\
+	 flip: 15 ,MaxChance: 1 ,nbrBees: 16\\
+	 flip: 20 ,MaxChance: 1 ,nbrBees: 16\\
+	 flip: 20 ,MaxChance: 2 ,nbrBees: 15\\
+	 flip: 16 ,MaxChance: 1 ,nbrBees: 17\\
+	 flip: 17 ,MaxChance: 1 ,nbrBees: 22\\
+	 flip: 12 ,MaxChance: 2 ,nbrBees: 21\\
+
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	 flip: 19 ,MaxChance: 1 ,nbrBees: 13\\
+	 flip: 18 ,MaxChance: 2 ,nbrBees: 15\\
+	 flip: 17 ,MaxChance: 1 ,nbrBees: 15\\
+	 flip: 12 ,MaxChance: 2 ,nbrBees: 16\\
+	 flip: 18 ,MaxChance: 1 ,nbrBees: 10\\
+	 flip: 17 ,MaxChance: 2 ,nbrBees: 14\\
+	 flip: 21 ,MaxChance: 1 ,nbrBees: 20\\
+	 flip: 22 ,MaxChance: 1 ,nbrBees: 22\\
+	 flip: 19 ,MaxChance: 1 ,nbrBees: 22\\
+	 flip: 21 ,MaxChance: 1 ,nbrBees: 23\\
+
+\end{minipage}\hfill
+
+
+
+\subsubsection{Paramétrage de MBSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	 flip: 14 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 3\\
+	 flip: 21 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 3\\
+	 flip: 19 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 3\\
+	 flip: 20 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 4\\
+	 flip: 21 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 3\\
+	 flip: 19 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+	 flip: 37 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	 flip: 36 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 5\\
+	 flip: 39 ,MaxCh: 1 ,nbrBees: 5 ,nbSwarm: 5\\
+	 flip: 43 ,MaxCh: 1 ,nbrBees: 5 ,nbSwarm: 5\\
+
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	 flip: 22 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+	 flip: 21 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 3\\
+	 flip: 17 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4\\
+	 flip: 16 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 3\\
+	 flip: 20 ,MaxCh: 1 ,nbrBees: 3 ,nbSwarm: 4\\
+	 flip: 23 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4\\
+	 flip: 41 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+	 flip: 37 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 5\\
+	 flip: 43 ,MaxCh: 2 ,nbrBees: 5 ,nbSwarm: 5\\
+	 flip: 40 ,MaxCh: 1 ,nbrBees: 5 ,nbSwarm: 5\\
+
+	
+\end{minipage}\hfill
+
+ 
+\subsubsection{Paramétrage de EHO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.3\\
+	 nbrClan: 3,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+	 nbrClan: 3,nbrEle: 3,alpha: 0.6,beta: 0.4\\
+	 nbrClan: 3,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	 nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	 nbrClan: 4,nbrEle: 4,alpha: 0.4,beta: 0.3\\
+
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.6\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+	 nbrClan: 4,nbrEle: 4,alpha: 0.4,beta: 0.6\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.5\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.2,beta: 0.5\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+	 nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.6\\
+	 nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+
+	
+	
+\end{minipage}\hfill
+
+ 
+\subsubsection{Paramétrage de ESWSA}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+	nbrEle: 15 , wt: 0.6 , p: 0.6\\
+	nbrEle: 16 , wt: 0.4 , p: 0.6\\
+	nbrEle: 16 , wt: 0.4 , p: 0.3\\
+	nbrEle: 12 , wt: 0.5 , p: 0.4\\
+	nbrEle: 13 , wt: 0.5 , p: 0.5\\
+	nbrEle: 14 , wt: 0.5 , p: 0.6\\
+	nbrEle: 17 , wt: 0.5 , p: 0.4\\
+	nbrEle: 12 , wt: 0.5 , p: 0.5\\
+	nbrEle: 16 , wt: 0.5 , p: 0.5\\
+	nbrEle: 18 , wt: 0.5 , p: 0.3\\
+	
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+	nbrEle: 18 , wt: 0.6 , p: 0.5\\
+	nbrEle: 19 , wt: 0.4 , p: 0.5\\
+	nbrEle: 17 , wt: 0.4 , p: 0.4\\
+	nbrEle: 19 , wt: 0.5 , p: 0.5\\
+	nbrEle: 18 , wt: 0.5 , p: 0.5\\
+	nbrEle: 18 , wt: 0.5 , p: 0.5\\
+	nbrEle: 15 , wt: 0.4 , p: 0.4\\
+	nbrEle: 19 , wt: 0.3 , p: 0.4\\
+	nbrEle: 19 , wt: 0.5 , p: 0.4\\
+	nbrEle: 18 , wt: 0.5 , p: 0.5\\
+	
+	
+	
+	
+\end{minipage}\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Expérimentations par rapport au nombre de cible}
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+\subsubsection{Paramétrage de BSO}
+\vspace{-0.5cm}
+\textbf{}\\
+flip: 15 ,MaxChance: 2 ,nbrBees: 15\\
+flip: 13 ,MaxChance: 2 ,nbrBees: 16\\
+flip: 17 ,MaxChance: 2 ,nbrBees: 13\\
+flip: 15 ,MaxChance: 1 ,nbrBees: 20\\
+flip: 18 ,MaxChance: 3 ,nbrBees: 12\\
+flip: 17 ,MaxChance: 1 ,nbrBees: 18\\
+flip: 17 ,MaxChance: 2 ,nbrBees: 16\\
+flip: 19 ,MaxChance: 2 ,nbrBees: 22 
+\end{minipage}\hfill
+\hspace{0.5cm}
+\begin{minipage}[t]{0.6\textwidth}
+\subsubsection{Paramétrage de MBSO}
+\vspace{-0.5cm}
+\textbf{}\\
+flip: 21 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 4\\
+flip: 19 ,MaxCh: 2 ,nbrBees: 3 ,nbSwarm: 3\\
+flip: 17 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 4\\
+flip: 18 ,MaxCh: 1 ,nbrBees: 4 ,nbSwarm: 3\\
+flip: 14 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 3\\
+flip: 18 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4\\
+flip: 15 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4\\
+flip: 20 ,MaxCh: 2 ,nbrBees: 4 ,nbSwarm: 4
+\end{minipage}\hfill
+
+
+\textbf{ }
+
+ 
+ 
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+\subsubsection{Paramétrage de EHO}
+\vspace{-0.5cm}
+\textbf{}\\
+nbrClan: 3 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.4\\
+nbrClan: 3 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.5\\
+nbrClan: 4 ,nbrEle: 3 ,alpha: 0.6 ,beta: 0.4\\
+nbrClan: 4 ,nbrEle: 3 ,alpha: 0.4 ,beta: 0.4\\
+nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4\\
+nbrClan: 3 ,nbrEle: 2 ,alpha: 0.5 ,beta: 0.6\\
+nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4\\
+nbrClan: 4 ,nbrEle: 3 ,alpha: 0.5 ,beta: 0.4
+\end{minipage}\hfill
+\begin{minipage}[t]{0.4\textwidth}
+\subsubsection{Paramétrage de ESWSA}
+\vspace{-0.5cm}
+\textbf{}\\
+nbrEle: 16 ,wt: 0.6 ,p: 0.4\\
+nbrEle: 18 ,wt: 0.5 ,p: 0.3\\
+nbrEle: 18 ,wt: 0.4 ,p: 0.5\\
+nbrEle: 18 ,wt: 0.4 ,p: 0.4\\
+nbrEle: 19 ,wt: 0.4 ,p: 0.4\\
+nbrEle: 21 ,wt: 0.5 ,p: 0.4\\
+nbrEle: 19 ,wt: 0.5 ,p: 0.5\\
+nbrEle: 19 ,wt: 0.5 ,p: 0.5
+
+\end{minipage}\hfill
+
+
+
+
+
+
+
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\newpage
+
+\section{Environnements complexes}
+\subsection{Expérimentations par rapport à la portée des cibles}
+\subsubsection{Paramétrage de BSO} 
+
+\noindent
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Mono-cible:} \\
+flip: 17 ,MaxChance: 1 ,nbrBees: 12\\
+flip: 17 ,MaxChance: 2 ,nbrBees: 15\\
+flip: 18 ,MaxChance: 2 ,nbrBees: 14\\
+flip: 20 ,MaxChance: 2 ,nbrBees: 14\\
+flip: 21 ,MaxChance: 2 ,nbrBees: 14\\
+flip: 20 ,MaxChance: 2 ,nbrBees: 15\\
+flip: 13 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 27 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 22 ,MaxChance: 1 ,nbrBees: 16\\
+flip: 27 ,MaxChance: 1 ,nbrBees: 15\\
+
+\end{minipage}\hfill
+\hspace{0.5cm}
+\begin{minipage}[t]{0.5\textwidth}
+	\textbf{Multi-cible}\\
+flip: 21 ,MaxChance: 3 ,nbrBees: 9\\
+flip: 13 ,MaxChance: 2 ,nbrBees: 7\\
+flip: 30 ,MaxChance: 2 ,nbrBees: 6\\
+flip: 24 ,MaxChance: 2 ,nbrBees: 7\\
+flip: 20 ,MaxChance: 3 ,nbrBees: 13\\
+flip: 16 ,MaxChance: 3 ,nbrBees: 9\\
+flip: 17 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 19 ,MaxChance: 2 ,nbrBees: 15\\
+flip: 19 ,MaxChance: 1 ,nbrBees: 13\\
+flip: 17 ,MaxChance: 1 ,nbrBees: 14\\
+
+\end{minipage}\hfill
+
+
+
+
+\subsubsection{Paramétrage de MBSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+flip: 21,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+flip: 20,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+flip: 18,MaxCh: 2,nbrBees: 3,nbSwarm: 3\\
+flip: 20,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+flip: 21,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+flip: 17,MaxCh: 1,nbrBees: 3,nbSwarm: 3\\
+flip: 36,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 34,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 34,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 34,MaxCh: 1,nbrBees: 3,nbSwarm: 5
+
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+flip: 21,MaxCh: 3,nbrBees: 4,nbSwarm: 4\\
+flip: 15,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+flip: 18,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+flip: 19,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+flip: 18,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+flip: 19,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+flip: 37,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 39,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 40,MaxCh: 1,nbrBees: 4,nbSwarm: 5\\
+flip: 41,MaxCh: 1,nbrBees: 4,nbSwarm: 4
+\end{minipage}\hfill
+
+
+
+
+\subsubsection{Paramétrage de EHO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.3\\
+nbrClan: 3,nbrEle: 4,alpha: 0.3,beta: 0.4\\
+nbrClan: 3,nbrEle: 2,alpha: 0.5,beta: 0.6\\
+nbrClan: 2,nbrEle: 4,alpha: 0.6,beta: 0.3\\
+nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.3\\
+nbrClan: 2,nbrEle: 2,alpha: 0.6,beta: 0.1\\
+nbrClan: 2,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+nbrClan: 2,nbrEle: 3,alpha: 0.6,beta: 0.8\\
+nbrClan: 2,nbrEle: 3,alpha: 0.6,beta: 0.3\\
+nbrClan: 2,nbrEle: 2,alpha: 0.3,beta: 0.2
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+nbrClan: 4,nbrEle: 2,alpha: 0.2,beta: 0.3\\
+nbrClan: 4,nbrEle: 3,alpha: 0.3,beta: 0.4\\
+nbrClan: 4,nbrEle: 2,alpha: 0.4,beta: 0.4\\
+nbrClan: 4,nbrEle: 4,alpha: 0.2,beta: 0.5\\
+nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.2\\
+nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.1\\
+nbrClan: 4,nbrEle: 3,alpha: 0.7,beta: 0.3\\
+nbrClan: 5,nbrEle: 3,alpha: 0.2,beta: 0.6\\
+nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.5\\
+nbrClan: 4,nbrEle: 3,alpha: 0.7,beta: 0.5
+
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de ESWSA}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+nbrEle: 16 , wt: 0.4 , p: 0.7\\
+nbrEle: 18 , wt: 0.6 , p: 0.5\\
+nbrEle: 13 , wt: 0.4 , p: 0.5\\
+nbrEle: 17 , wt: 0.7 , p: 0.5\\
+nbrEle: 12 , wt: 0.5 , p: 0.6\\
+nbrEle: 19 , wt: 0.4 , p: 0.2\\
+nbrEle: 12 , wt: 0.3 , p: 0.5\\
+nbrEle: 13 , wt: 0.5 , p: 0.4\\
+nbrEle: 11 , wt: 0.4 , p: 0.6\\
+nbrEle: 11 , wt: 0.3 , p: 0.2
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+nbrEle: 18 , wt: 0.3 , p: 0.4\\
+nbrEle: 19 , wt: 0.4 , p: 0.7\\
+nbrEle: 20 , wt: 0.4 , p: 0.5\\
+nbrEle: 18 , wt: 0.4 , p: 0.6\\
+nbrEle: 15 , wt: 0.6 , p: 0.5\\
+nbrEle: 15 , wt: 0.2 , p: 0.4\\
+nbrEle: 14 , wt: 0.3 , p: 0.7\\
+nbrEle: 19 , wt: 0.3 , p: 0.4\\
+nbrEle: 15 , wt: 0.4 , p: 0.6\\
+nbrEle: 13 , wt: 0.3 , p: 0.5
+	
+\end{minipage}\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Expérimentations par rapport à la taille des environnements}
+\subsubsection{Paramétrage de BSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+flip: 11 ,MaxChance: 1 ,nbrBees: 10\\
+flip: 27 ,MaxChance: 1 ,nbrBees: 13\\
+flip: 21 ,MaxChance: 1 ,nbrBees: 13\\
+flip: 39 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 30 ,MaxChance: 1 ,nbrBees: 13\\
+flip: 34 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 18 ,MaxChance: 1 ,nbrBees: 14\\
+flip: 24 ,MaxChance: 1 ,nbrBees: 15\\
+flip: 19 ,MaxChance: 1 ,nbrBees: 20\\
+flip: 18 ,MaxChance: 1 ,nbrBees: 20
+	
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+flip: 37 ,MaxChance: 1 ,nbrBees: 9\\
+flip: 19 ,MaxChance: 1 ,nbrBees: 9\\
+flip: 24 ,MaxChance: 1 ,nbrBees: 9\\
+flip: 16 ,MaxChance: 1 ,nbrBees: 11\\
+flip: 14 ,MaxChance: 2 ,nbrBees: 16\\
+flip: 12 ,MaxChance: 1 ,nbrBees: 16\\
+flip: 44 ,MaxChance: 2 ,nbrBees: 17\\
+flip: 14 ,MaxChance: 2 ,nbrBees: 19\\
+flip: 15 ,MaxChance: 1 ,nbrBees: 20\\
+flip: 12 ,MaxChance: 2 ,nbrBees: 19
+	
+\end{minipage}\hfill
+
+
+
+\subsubsection{Paramétrage de MBSO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+flip: 32,MaxCh: 1,nbrBees: 3,nbSwarm: 34\\
+flip: 30,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+flip: 34,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 38,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 37,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 32,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+flip: 39,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 38,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 44,MaxCh: 1,nbrBees: 4,nbSwarm: 5\\
+flip: 36,MaxCh: 1,nbrBees: 5,nbSwarm: 5
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+flip: 18,MaxCh: 2,nbrBees: 4,nbSwarm: 3\\
+flip: 41,MaxCh: 1,nbrBees: 4,nbSwarm: 3\\
+flip: 37,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+flip: 35,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+flip: 36,MaxCh: 1,nbrBees: 3,nbSwarm: 4\\
+flip: 33,MaxCh: 1,nbrBees: 5,nbSwarm: 5\\
+flip: 41,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+flip: 40,MaxCh: 2,nbrBees: 4,nbSwarm: 5\\
+flip: 24,MaxCh: 1,nbrBees: 4,nbSwarm: 5\\
+flip: 30,MaxCh: 1,nbrBees: 4,nbSwarm: 5
+
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de EHO}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+nbrClan: 2,nbrEle: 3,alpha: 0.3,beta: 0.5\\
+nbrClan: 2,nbrEle: 3,alpha: 0.3,beta: 0.6\\
+nbrClan: 2,nbrEle: 4,alpha: 0.4,beta: 0.3\\
+nbrClan: 3,nbrEle: 3,alpha: 0.6,beta: 0.4\\
+nbrClan: 3,nbrEle: 4,alpha: 0.4,beta: 0.3\\
+nbrClan: 2,nbrEle: 4,alpha: 0.4,beta: 0.4\\
+nbrClan: 3,nbrEle: 3,alpha: 0.5,beta: 0.3\\
+nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.4\\
+nbrClan: 4,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+nbrClan: 4,nbrEle: 4,alpha: 0.2,beta: 0.8
+
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.4\\
+nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.4\\
+nbrClan: 3,nbrEle: 3,alpha: 0.7,beta: 0.6\\
+nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+nbrClan: 3,nbrEle: 4,alpha: 0.5,beta: 0.5\\
+nbrClan: 4,nbrEle: 3,alpha: 0.7,beta: 0.6\\
+nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.5\\
+nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+nbrClan: 4,nbrEle: 4,alpha: 0.3,beta: 0.3\\
+nbrClan: 5,nbrEle: 4,alpha: 0.5,beta: 0.4
+	
+\end{minipage}\hfill
+
+
+\subsubsection{Paramétrage de ESWSA}
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Mono-cible:} \\
+nbrEle: 7 , wt: 0.5 , p: 0.5\\
+nbrEle: 9 , wt: 0.4 , p: 0.6\\
+nbrEle: 9 , wt: 0.5 , p: 0.5\\
+nbrEle: 13 , wt: 0.6 , p: 0.5\\
+nbrEle: 14 , wt: 0.5 , p: 0.5\\
+nbrEle: 10 , wt: 0.5 , p: 0.1\\
+nbrEle: 16 , wt: 0.4 , p: 0.4\\
+nbrEle: 11 , wt: 0.4 , p: 0.2\\
+nbrEle: 17 , wt: 0.7 , p: 0.4\\
+nbrEle: 19 , wt: 0.5 , p: 0.3
+	
+	
+\end{minipage}\hfill
+\hspace{0.2cm}
+\begin{minipage}[t]{0.55\textwidth}
+	\textbf{Multi-cible}\\
+nbrEle: 14 , wt: 0.6 , p: 0.7\\
+nbrEle: 15 , wt: 0.5 , p: 0.3\\
+nbrEle: 16 , wt: 0.4 , p: 0.5\\
+nbrEle: 17 , wt: 0.5 , p: 0.2\\
+nbrEle: 14 , wt: 0.4 , p: 0.6\\
+nbrEle: 14 , wt: 0.7 , p: 0.5\\
+nbrEle: 17 , wt: 0.4 , p: 0.3\\
+nbrEle: 20 , wt: 0.5 , p: 0.6\\
+nbrEle: 17 , wt: 0.4 , p: 0.4\\
+nbrEle: 18 , wt: 0.4 , p: 0.5
+	
+	
+	
+	
+\end{minipage}\hfill
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\subsubsection{Expérimentations par rapport au nombre de cible}
+
+\noindent
+\begin{minipage}[t]{0.45\textwidth}
+\subsubsection{Paramétrage de BSO}
+\vspace{-0.5cm}
+\textbf{}\\
+flip: 13 ,MaxChance: 2 ,nbrBees: 15\\
+flip: 16 ,MaxChance: 2 ,nbrBees: 13\\
+flip: 15 ,MaxChance: 1 ,nbrBees: 20\\
+flip: 18 ,MaxChance: 3 ,nbrBees: 12\\
+flip: 17 ,MaxChance: 1 ,nbrBees: 18\\
+flip: 17 ,MaxChance: 2 ,nbrBees: 16\\
+flip: 19 ,MaxChance: 2 ,nbrBees: 22\\
+flip: 20 ,MaxChance: 1 ,nbrBees: 19 
+\end{minipage}\hfill
+\hspace{1cm}
+\begin{minipage}[t]{0.6\textwidth}
+\subsubsection{Paramétrage de MBSO}
+\vspace{-0.5cm}
+\textbf{}\\
+flip: 20,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+flip: 17,MaxCh: 2,nbrBees: 4,nbSwarm: 4\\
+flip: 35,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 39,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 37,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 36,MaxCh: 2,nbrBees: 3,nbSwarm: 4\\
+flip: 31,MaxCh: 1,nbrBees: 4,nbSwarm: 4\\
+flip: 38,MaxCh: 2,nbrBees: 5,nbSwarm: 4
+\end{minipage}\hfill
+
+
+\textbf{ }\\
+
+
+
+\noindent
+\begin{minipage}[t]{0.55\textwidth}
+\subsubsection{Paramétrage de EHO}
+\vspace{-0.5cm}
+\textbf{}\\
+nbrClan: 2,nbrEle: 3,alpha: 0.8,beta: 0.4\\
+nbrClan: 4,nbrEle: 3,alpha: 0.4,beta: 0.4\\
+nbrClan: 4,nbrEle: 3,alpha: 0.3,beta: 0.4\\
+nbrClan: 4,nbrEle: 3,alpha: 0.6,beta: 0.4\\
+nbrClan: 4,nbrEle: 3,alpha: 0.3,beta: 0.3\\
+nbrClan: 5,nbrEle: 3,alpha: 0.5,beta: 0.5\\
+nbrClan: 4,nbrEle: 4,alpha: 0.4,beta: 0.4\\
+nbrClan: 4,nbrEle: 4,alpha: 0.6,beta: 0.5
+\end{minipage}\hfill
+\begin{minipage}[t]{0.4\textwidth}
+\subsubsection{Paramétrage de ESWSA}
+\vspace{-0.5cm}
+\textbf{}\\
+nbrEle: 18 , wt: 0.5 , p: 0.5\\
+nbrEle: 18 , wt: 0.5 , p: 0.5\\
+nbrEle: 13 , wt: 0.6 , p: 0.5\\
+nbrEle: 12 , wt: 0.4 , p: 0.5\\
+nbrEle: 18 , wt: 0.3 , p: 0.5\\
+nbrEle: 19 , wt: 0.5 , p: 0.4\\
+nbrEle: 21 , wt: 0.5 , p: 0.3\\
+nbrEle: 20 , wt: 0.4 , p: 0.5
+\end{minipage}\hfill
+
+

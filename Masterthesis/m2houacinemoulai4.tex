@@ -1,0 +1,247 @@
+\documentclass[
+11pt,french,singlespacing,headsepline,]{MastersDoctoralThesis} % The class file specifying the document structure
+%add by sinou
+\setcounter{secnumdepth}{2}
+\usepackage{float}
+%required for math equations
+\usepackage{amsmath}
+\usepackage{multicol}%\usepackage{amsmath}%
+%%\usepackage{MnSymbol}
+%\usepackage{MnSymbol}%
+\usepackage{wasysym}%
+\usepackage{amssymb}
+
+
+\usepackage{mathpazo} % Use the Palatino font by default
+\usepackage[numbers]{natbib}
+\usepackage{pdfpages}
+%***** french
+\renewcommand{\contentsname}{Table des matières}
+\renewcommand{\listtablename}{Listes des tableaux}
+\renewcommand{\listfigurename}{Listes des figures}
+\renewcommand{\appendixname}{Annexe}
+\renewcommand{\abbrevname}{Liste des abbréviations}
+%\captionsetup[table]{name=tableau}
+%\renewcommand\thesection{\arabic{section}}
+%\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+%french memoire
+\newenvironment{poliabstract}[1]
+{\renewcommand{\abstractname}{#1}\begin{abstract}}
+	{\end{abstract}}
+%\usepackage[backend=bibtex,style=numeric,sorting=none]{biblatex}
+
+%\addbibresource{bibliorgraphy.bib} % The filename of the bibliography
+
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+%\geometry{
+%	paper=a4paper, % Change to letterpaper for US letter
+%	inner=2.0cm, % Inner margin
+%	outer=3.2cm, % Outer margin
+%	bindingoffset=.5cm, % Binding offset
+%	top=1.5cm, % Top margin
+%	bottom=1.5cm, % Bottom margin
+%	%showframe, % Uncomment to show how the type block is set on the page
+%}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+%\AtBeginDocument{
+%	\hypersetup{pdftitle=\ttitle} 
+%	\hypersetup{pdfauthor=\authorname} 
+%	\hypersetup{pdfkeywords=\keywordnames} 
+%}
+
+
+
+
+\begin{document}
+	
+	\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+	
+	\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+	
+	%----------------------------------------------------------------------------------------
+	%	TITLE PAGE
+	%----------------------------------------------------------------------------------------
+%\includepdf{others/pagedegarde}	
+ \let\cleardoublepage\clearpage
+
+%	\begin{titlepage}
+%		\begin{center}
+%			
+%			\vspace*{.06\textheight}
+%			{\scshape\LARGE \univname\par}\vspace{1.5cm} 
+%			\textsc{\Large Mémoire de Master}\\[0.5cm] 
+%			\deptname\\[2cm]
+%			
+%			
+%			\HRule \\[0.4cm] % Horizontal line
+%			{\huge \bfseries \ttitle\par}\vspace{0.4cm} % Thesis title
+%			\HRule \\[1.5cm] % Horizontal line
+%			
+%			\begin{minipage}[t]{0.4\textwidth}
+%				\begin{flushleft} \large
+%					\emph{Réalisation:}\\ \authorname % Author name - remove the \href bracket to remove the link
+%				\end{flushleft}
+%			\end{minipage}
+%			\begin{minipage}[t]{0.4\textwidth}
+%				\begin{flushright} \large
+%					\emph{Sujet Proposé par:} \\
+%					\supname % Supervisor name - remove the \href bracket to remove the link  
+%				\end{flushright}
+%			\end{minipage}\\[3cm]
+%			
+%			
+%			
+%			\examname
+%			
+%			\vfill
+%			
+%			
+%			{\large \today}\\[4cm] % Date
+%			%\includegraphics{Logo} % University/department logo - uncomment to place it
+%			
+%			\vfill
+%		\end{center}
+%	\end{titlepage}
+%	
+
+
+%----------------------------------------------------------------------------------------
+%	ACKNOWLEDGEMENTS
+%----------------------------------------------------------------------------------------
+
+%\input{others/NailaThx}
+%%\newpage
+%\input{others/HassinaThx}
+%%\newpage
+%
+%
+%%----------------------------------------------------------------------------------------
+%%	DEDICATION
+%%----------------------------------------------------------------------------------------
+%
+%%\input{others/NailaDedi}
+%%\newpage
+%%\input{others/HassinaDedi}
+%
+%%\newpage
+%
+%%----------------------------------------------------------------------------------------
+%%	ABSTRACT PAGE
+%%----------------------------------------------------------------------------------------
+%%
+%%\include{others/summary}
+%%\clearpage
+%%\includepdf{others/arabicabstract}
+%%%
+%%%----------------------------------------------------------------------------------------
+%%%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+%%%----------------------------------------------------------------------------------------
+%
+\tableofcontents % Prints the main table of contents
+
+
+\listoffigures % Prints the list of figures
+
+
+\listoftables % Prints the list of tables
+%
+%%
+%%	\listofalgorithmes
+%%%	\clearpage
+%%
+%%%----------------------------------------------------------------------------------------
+%%%	ABBREVIATIONS
+%%%----------------------------------------------------------------------------------------
+%%
+\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+	%\textbf{IA} & \textbf{I}nelligence \textbf{A}rtificielle\\
+	%\textbf{IAD} & \textbf{I}nelligence \textbf{A}rtificielle \textbf{D}istribuée\\
+	
+	\textbf{PSO} & \textbf{P}article \textbf{S}warm \textbf{O}ptimization \\
+	\textbf{GA} & \textbf{G}enetic \textbf{A}lgorithm\\ 
+	\textbf{ACO} & \textbf{A}nt \textbf{C}olony \textbf{O}ptimisation\\
+	\textbf{BA} & \textbf{B}ees \textbf{A}lgorithm\\ 
+	\textbf{ABC} & \textbf{A}rtificial \textbf{B}ee \textbf{C}olony Optimisation\\
+	\textbf{BFO} & \textbf{B}acterial \textbf{F}oraging \textbf{O}ptimisation\\
+	\textbf{GSO} & \textbf{G}lowworm \textbf{S}warm \textbf{O}ptimisation\\
+	\textbf{FA} & \textbf{F}irefly \textbf{A}lgorithm\\
+	\textbf{DW} & \textbf{D}inamic \textbf{W}indow\\
+	\textbf{SAT} & \textbf{S}atisfaction\\
+	
+	
+	\textbf{FKD} & \textbf{F}iltre de \textbf{K}alman \textbf{D}istribué \\
+	
+	\textbf{FOA} & \textbf{F}ruit \textbf{F}ly \textbf{O}ptimization \textbf{A}lgorithm\\
+	\textbf{MSCM} & \textbf{M}ulti-\textbf{S}cale \textbf{C}ooperative \textbf{M}utation\\
+	
+	
+	\textbf{BSO} & \textbf{B}ee \textbf{S}warm \textbf{O}ptimization\\
+	\textbf{EHO} & \textbf{E}lephant \textbf{H}erding \textbf{O}ptimization\\
+	\textbf{ESWSA} & \textbf{E}lephant \textbf{S}warm \textbf{W}ater \textbf{S}earch \textbf{A}lgorithm \\
+	\textbf{GA} & \textbf{G}énétique \textbf{A}lgorithme \\ 
+	
+	\textbf{Méta} & \textbf{M}étaheuristique\\ \textbf{Algo} & \textbf{A}lgorithme\\ 
+	
+	
+\end{abbreviations}
+%
+
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - CHAPTERS
+%----------------------------------------------------------------------------------------
+
+\mainmatter % Begin numeric (1,2,3...) page numbering
+\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+\include{Chapters/Introduction}
+\let\cleardoublepage\clearpage
+\include{Chapters/Chapter1}
+\let\cleardoublepage\clearpage
+\include{Chapters/Chapter2} 
+\let\cleardoublepage\clearpage
+\include{Chapters/Chapter3}
+\include{Chapters/Chapter4}
+\include{Chapters/Chapter5}
+\let\cleardoublepage\clearpage
+\include{Chapters/Chapter6v2} 
+\let\cleardoublepage\clearpage
+\include{Chapters/Conclusion} 
+
+%----------------------------------------------------------------------------------------
+%	THESIS CONTENT - APPENDICES
+%----------------------------------------------------------------------------------------
+%\pagenumbering{roman}
+%\setcounter{page}{22}
+
+\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+%\let\cleardoublepage\clearpage
+%\include{Appendices/AppendixA}
+%\let\cleardoublepage\clearpage
+%\include{Appendices/AppendixB}
+%\let\cleardoublepage\clearpage
+%\include{Appendices/AppendixC}
+%
+%%----------------------------------------------------------------------------------------
+%%	BIBLIOGRAPHY
+%%----------------------------------------------------------------------------------------
+%	
+\bibliography{bibliography}
+\bibliographystyle{apalike}
+
+	
+
+%	\printbibliography[heading=bibintoc]
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}

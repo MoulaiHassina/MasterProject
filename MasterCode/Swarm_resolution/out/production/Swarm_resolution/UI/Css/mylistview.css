@@ -1,0 +1,22 @@
+.jfx-list-cell:selected{
+    -fx-background-color: #f8f56e;
+}
+
+.jfx-list-cell .jfx-rippler{
+    -fx-rippler-fill:BLUE ;
+}
+.jfx-list-cell:hover{
+    -fx-background-color:#d1c4e9;
+}
+.jfx-list-view{
+    -fx-background-insets: 0;
+    -fx-cell-vertical-margin:10.0;
+    -fx-vertical-gap:10;
+   /* -fx-pref-width: 250;*/
+}
+.jfx-popup-container{
+    -fx-background-color: #F2FEFA;
+}
+.list-cell:empty {
+    -fx-opacity: 0;
+}

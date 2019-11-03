@@ -1,0 +1,301 @@
+\documentclass[
+11pt,french,singlespacing,headsepline,]{MastersDoctoralThesis} % The class file specifying the document structure
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{mathpazo}
+
+\usepackage{amssymb}
+\usepackage{mathtools}
+\usepackage{titlesec}
+\usepackage{pdfpages}
+%\usepackage{mathptmx}
+
+
+\newenvironment{poliabstract}[1]
+{\renewcommand{\abstractname}{#1}\begin{abstract}}
+	{\end{abstract}} 
+
+% Les têtes de chapitre sont définies ainsi
+\makeatletter
+\def\@makechapterhead#1{%
+	\vspace*{-30\p@}%
+	{\parindent \z@ \raggedright
+		\normalfont
+		\ifnum \c@secnumdepth >\m@ne
+		\if@mainmatter
+		\huge\bfseries 
+%		\scshape
+	%	\@chapapp\space \thechapter
+		\par\nobreak
+		\fi
+		\fi
+		\interlinepenalty\@M
+		\Huge \bfseries #1\par\nobreak
+		\vskip 30\p@
+	}}
+	%\linespread{1}
+%\def\@makeschapterhead#1{%
+%		\vspace*{-30\p@}%
+%		{\parindent \z@ \raggedright
+%			\normalfont
+%			\ifnum \c@secnumdepth >\m@ne
+%			\if@mainmatter
+%			\huge\bfseries 
+%			%		\scshape
+%			\@chapapp\space \thechapter
+%			\par\nobreak
+%			\fi
+%			\fi
+%			\interlinepenalty\@M
+%			\Huge \bfseries #1\par\nobreak
+%			\vskip 30\p@
+%		}}
+
+
+
+
+
+
+    \usepackage[normalem]{ulem}
+    \usepackage{titlesec}
+    \usepackage{multirow}
+
+
+
+\usepackage[backend=bibtex,
+style=numeric,
+sorting=none,
+natbib=true,
+isbn=true,
+doi=false,
+url=true,
+backref=false,
+eprint=false,
+%defernumbers=true,
+firstinits=true,%false
+]{biblatex}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\makeatletter%
+%\DeclareCiteCommand{\citeauthorfin}
+%{\renewcommand*{\mkbibnamelast}[1]{####1}%
+%	\boolfalse{citetracker}%
+%	\boolfalse{pagetracker}%
+%	\usebibmacro{prenote}}
+%{\ifciteindex
+%	{\indexnames{labelname}}
+%	{}%
+%	% \printnames[initsonly]{author} % too strong, all is initials (D.E.K.)
+%	%\printnames[firstinits=true,first-last]{author}} % cannot:
+%	% \ExecuteBibliographyOptions{firstinits=false} % only in preamble!
+%	% so must use setkeys:
+%	\setkeys{blx@opt@pre}{firstinits=true}%
+%	\printnames[first-last]{author}%
+%	\setkeys{blx@opt@pre}{firstinits=false}% restore - assuming false is default, which here it is
+%}
+%{\multicitedelim}
+%{\usebibmacro{postnote}}
+%\makeatother%
+%\DeclareCiteCommand{\citeauthorffn}
+%{\renewcommand*{\mkbibnamelast}[1]{####1}%
+%	\boolfalse{citetracker}%
+%	\boolfalse{pagetracker}%
+%	\usebibmacro{prenote}}
+%{\ifciteindex
+%	{\indexnames{labelname}}
+%	{}%
+%	\printnames[first-last]{author}}
+%{\multicitedelim}
+%{\usebibmacro{postnote}}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\addbibresource{bibliography.bib} % The filename of the bibliography
+
+
+\usepackage[autostyle=true]{csquotes} % Required to generate language-dependent quotes in the bibliography
+%----------------------------------------------------------------------------------------
+%	MARGIN SETTINGS
+%----------------------------------------------------------------------------------------
+
+%\geometry{
+%	paper=a4paper, % Change to letterpaper for US letter
+%	inner=2.5cm, % Inner margin
+%	outer=3.8cm, % Outer margin
+%	bindingoffset=.5cm, % Binding offset
+%	top=1.5cm, % Top margin
+%	bottom=1.5cm, % Bottom margin
+%	%showframe, % Uncomment to show how the type block is set on the page
+%}
+
+%----------------------------------------------------------------------------------------
+%	THESIS INFORMATION
+%----------------------------------------------------------------------------------------
+
+\thesistitle{Développement d’un système multi-robot basé sur l’intelligence en essaim pour la détection
+	de multiples cibles dans un environnement complexe et inconnu.}
+\supervisor{Dr. Habiba \textsc{Drias}}
+\examiner{Mr et Mme} % Your examiner's name, this is not currently used anywhere in the template, print it elsewhere with \examname
+\degree{Master} % Your degree name, this is used in the title page and abstract, print it elsewhere with \degreename
+\author{MOULAI \textsc{Hassina Safaa}\\ % Your name
+	HOUACINE \textsc{Naila Aziza}} % Your name
+
+\keywords{Système multi-robot , BSO, instelligence en essaim, Détection de cibles, métaheuristiques}
+\university{\textsc{\LARGE Université des Sciences et de la Technologie Houari Boumediene}} 
+\department{Département d’Informatique} 
+\group{}
+\faculty{Faculté d’Electronique et Informatique} 
+
+\AtBeginDocument{
+	\hypersetup{pdftitle=\ttitle} 
+	\hypersetup{pdfauthor=\authorname} 
+	\hypersetup{pdfkeywords=\keywordnames} 
+}
+
+
+
+
+\begin{document}
+	    
+	\frontmatter % Use roman page numbering style (i, ii, iii, iv...) for the pre-content pages
+	
+	\pagestyle{plain} % Default to the plain heading style until the thesis style is called for the body content
+	
+	%----------------------------------------------------------------------------------------
+	%	TITLE PAGE
+	%----------------------------------------------------------------------------------------
+	
+%	 \includepdf{others/pagedegarde}	
+%	 \let\cleardoublepage\clearpage
+	\includepdf{others/pageGarde}
+	
+	%----------------------------------------------------------------------------------------
+	%	ACKNOWLEDGEMENTS
+	%----------------------------------------------------------------------------------------
+
+	\input{others/HassinaThx}
+	\input{others/NailaThx}
+	\newpage
+	%\newpage
+
+
+	%----------------------------------------------------------------------------------------
+	%	DEDICATION
+	%----------------------------------------------------------------------------------------
+
+	\input{others/NailaDedi}
+	\newpage
+	%\input{others/HassinaDedi}
+	%\newpage
+
+	%----------------------------------------------------------------------------------------
+	%	ABSTRACT PAGE
+	%----------------------------------------------------------------------------------------
+	
+	\include{others/summary}
+	\clearpage
+	\includepdf{others/arabicabstract}
+	
+	%----------------------------------------------------------------------------------------
+	%	LIST OF CONTENTS/FIGURES/TABLES PAGES
+	%----------------------------------------------------------------------------------------
+	\setcounter{secnumdepth}{3}
+	\setcounter{tocdepth}{3}
+	\tableofcontents  % Prints the main table of contents
+	\newpage
+		
+	\listoffigures % Prints the list of figures
+	\newpage
+	
+	\listoftables % Prints the list of tables
+	\newpage
+	
+%	\listofalgorithmes
+%	\clearpage
+	
+	%----------------------------------------------------------------------------------------
+	%	ABBREVIATIONS
+	%----------------------------------------------------------------------------------------
+	
+	\begin{abbreviations}{ll} % Include a list of abbreviations (a table of two columns)
+		\textbf{IA} & \textbf{I}nelligence \textbf{A}rtificielle\\
+		\textbf{SAT} & \textbf{Sat}isfaction\\
+		\textbf{SMRs} & \textbf{S}ystème \textbf{M}ulti-\textbf{R}obots\\
+		\textbf{ISS} & \textbf{I}nput \textbf{S}pace \textbf{S}ampling\\
+		\textbf{DW} & \textbf{D}inamic \textbf{W}indow\\
+		\textbf{FKD} & \textbf{F}iltre de \textbf{K}alman \textbf{D}istribué \\
+		
+		\textbf{PSO} & \textbf{P}article \textbf{S}warm \textbf{O}ptimization \\
+		\textbf{GA} & \textbf{G}enetic \textbf{A}lgorithm\\
+		\textbf{BSO} & \textbf{B}ee \textbf{S}warm \textbf{O}ptimization\\
+		\textbf{EHO} & \textbf{E}lephant \textbf{H}erding \textbf{O}ptimization\\
+		\textbf{ESWSA} & \textbf{E}lephant \textbf{S}warm \textbf{W}ater \textbf{S}earch \textbf{A}lgorithm \\
+		\textbf{TS} & \textbf{T}aboo \textbf{S}earch\\
+		\textbf{SS} & \textbf{S}catter \textbf{S}earch\\
+		\textbf{GLS} & \textbf{G}uided \textbf{L}ocal \textbf{S}earch\\
+		\textbf{MA} & \textbf{M}emetic \textbf{A}lgorithm\\
+		\textbf{FFA} & \textbf{F}irefly \textbf{A}lgorithm\\
+		\textbf{ABSO} & \textbf{A}dvenced \textbf{B}ee \textbf{S}warm \textbf{O}ptimization\\
+		\textbf{CS} & \textbf{C}uckoo \textbf{S}earch\\
+		\textbf{FPA} & \textbf{F}lower \textbf{P}ollination \textbf{A}lgorithm\\
+		\textbf{BBO} & \textbf{B}iogeography-\textbf{B}ased \textbf{O}ptimization\\
+		\textbf{DE} & \textbf{D}ifferential \textbf{E}volution\\
+		\textbf{ACO} & \textbf{A}nt \textbf{C}olony \textbf{O}ptimisation\\
+		\textbf{BA} & \textbf{B}at \textbf{A}lgorithm\\ 
+		\textbf{ABC} & \textbf{A}rtificial \textbf{B}ee \textbf{C}olony \textbf{O}ptimisation\\
+		\textbf{BFO} & \textbf{B}acterial \textbf{F}oraging \textbf{O}ptimisation\\
+		\textbf{GSO} & \textbf{G}lowworm \textbf{S}warm \textbf{O}ptimisation\\
+		\textbf{FOA} & \textbf{F}ruit \textbf{F}ly \textbf{O}ptimization \textbf{A}lgorithm\\
+		\textbf{MSCM} & \textbf{M}ulti-\textbf{S}cale \textbf{C}ooperative \textbf{M}utation\\
+		
+		 
+		 \textbf{Méta} & \textbf{Méta}-heuristic\\ \textbf{Algo} & \textbf{Algo}rithm\\ 
+		 
+		
+		
+	\end{abbreviations}
+	
+	
+
+	%----------------------------------------------------------------------------------------
+	%	THESIS CONTENT - CHAPTERS
+	%----------------------------------------------------------------------------------------
+
+	\mainmatter % Begin numeric (1,2,3...) page numbering
+	\pagestyle{thesis} % Return the page headers back to the "thesis" style
+
+	\include{Chapters/Introduction}
+	\include{Chapters/Chapter1}
+	\include{Chapters/Chapter2} 
+	\include{Chapters/Chapter3}
+	\include{Chapters/Chapter4} 
+	\include{Chapters/Chapter5} 
+	\include{Chapters/Chapter6v2}
+	\include{Chapters/Conclusion} 
+	
+	%----------------------------------------------------------------------------------------
+	%	THESIS CONTENT - APPENDICES
+	%----------------------------------------------------------------------------------------
+	\pagenumbering{roman}
+%	\setcounter{page}{22}
+	
+	
+	\appendix % Cue to tell LaTeX that the following "chapters" are Appendices
+	
+	%\include{Appendices/AppendixA}
+	%\include{Appendices/AppendixB}
+	%\include{Appendices/AppendixC}
+	%\include{Appendices/AppendixD}
+	
+	%----------------------------------------------------------------------------------------
+	%	BIBLIOGRAPHY
+	%----------------------------------------------------------------------------------------
+	
+
+	%\bibliography{bibliography}
+	\printbibliography[heading=bibintoc]
+	
+	%----------------------------------------------------------------------------------------
+	
+\end{document}  

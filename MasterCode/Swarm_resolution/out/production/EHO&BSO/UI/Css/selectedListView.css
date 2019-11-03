@@ -1,0 +1,15 @@
+.jfx-list-view{
+    -fx-background-color: #f8f56e;
+}
+
+.jfx-popup-container{
+    -fx-background-color: #F2FEFA;
+}
+
+.jfx-list-cell:selected{
+    -fx-background-color: #f8f56e;
+}
+
+.jfx-list-cell{
+    -fx-background-color: #f8f56e;
+}

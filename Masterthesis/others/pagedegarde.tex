@@ -1,0 +1,219 @@
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage[top=2.5cm, bottom=3cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[titletoc,title]{appendix}
+\usepackage[linewidth=1pt]{mdframed}
+\usepackage{framed}
+\usepackage{listings}
+\usepackage{smartdiagram}
+\usepackage{smartdiagram}
+\usesmartdiagramlibrary{additions}
+\lstdefinestyle{customc}{
+	belowcaptionskip=1\baselineskip,
+	breaklines=true,
+	frame=L,
+	xleftmargin=\parindent,
+	language=C,
+	showstringspaces=false,
+	basicstyle=\footnotesize\ttfamily,
+	keywordstyle=\bfseries\color{green!40!black},
+	commentstyle=\itshape\color{purple!40!black},
+	identifierstyle=\color{blue},
+	stringstyle=\color{orange},
+}
+
+\lstdefinestyle{customasm}{
+	belowcaptionskip=1\baselineskip,
+	frame=L,
+	xleftmargin=\parindent,
+	language=[x86masm]Assembler,
+	basicstyle=\footnotesize\ttfamily,
+	commentstyle=\itshape\color{purple!40!black},
+}
+
+\lstset{escapechar=@,style=customc}
+
+\lstset{
+	literate=%
+	{à}{{\'a}}1
+	{í}{{\'i}}1
+	{é}{{\'e}}1
+	{è}{{\`e}}1
+	{ý}{{\'y}}1
+	{ú}{{\'u}}1
+	{ó}{{\'o}}1
+	{ě}{{\v{e}}}1
+	{š}{{\v{s}}}1
+	{č}{{\v{c}}}1
+	{ř}{{\v{r}}}1
+	{ž}{{\v{z}}}1
+	{ď}{{\v{d}}}1
+	{ť}{{\v{t}}}1
+	{ň}{{\v{n}}}1
+	{ů}{{\r{u}}}1
+	{Á}{{\'A}}1
+	{Í}{{\'I}}1
+	{É}{{\'E}}1
+	{Ý}{{\'Y}}1
+	{Ú}{{\'U}}1
+	{Ó}{{\'O}}1
+	{Ě}{{\v{E}}}1
+	{Š}{{\v{S}}}1
+	{Č}{{\v{C}}}1
+	{Ř}{{\v{R}}}1
+	{Ž}{{\v{Z}}}1
+	{Ď}{{\v{D}}}1
+	{Ť}{{\v{T}}}1
+	{Ň}{{\v{N}}}1
+	{Ů}{{\r{U}}}1
+}
+%\usepackage[french]{babel}
+%\select@language{french}
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks,
+	citecolor=black,
+	filecolor=black,
+	linkcolor=black,
+	urlcolor=black
+}
+\usepackage{array}
+\usepackage{makecell}
+\usepackage{gensymb}
+\renewcommand\theadalign{cb}
+\renewcommand\theadfont{\bfseries}
+\renewcommand\theadgape{\Gape[4pt]}
+\renewcommand\cellgape{\Gape[4pt]}
+
+\usepackage{fancyhdr}
+\renewcommand{\chaptername}{Chapitre}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{graphicx}
+\usepackage{subfig}
+\usepackage{float}
+\usepackage{amssymb}
+\usepackage{framed}
+\usepackage{wrapfig}
+%\captionsetup[table]{name=Figure}
+
+\usepackage[french,Algorithme]{algorithm}
+%\renewcommand{\thealgorithm}{}
+\usepackage[noend]{algpseudocode}
+
+\makeatletter
+\def\BState{\State\hskip-\ALG@thistlm}
+\makeatother
+
+%\usepackage{color}
+\PassOptionsToPackage{usenames,dvipsnames}{xcolor}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}}
+\renewcommand{\contentsname}{Table des matières}
+\renewcommand{\listtablename}{Listes des tableaux}
+\renewcommand{\listfigurename}{Listes des figures}
+\renewcommand{\appendixname}{Annexe}
+%\captionsetup[table]{name=tableau}
+\renewcommand\thesection{\arabic{section}}
+\renewcommand\thesubsection{\thesection.\arabic{subsection}}
+\setcounter{secnumdepth}{4}
+\usepackage{titlesec}
+\titleformat{\paragraph}
+{\normalfont\normalsize\bfseries}{\theparagraph}{1em}{}
+\titlespacing*{\paragraph}
+{0pt}{3.25ex plus 1ex minus .2ex}{1.5ex plus .2ex}
+
+\pagestyle{fancy}
+\lhead{\leftmark}
+\rhead{}
+%\cfoot{center of the footer!}
+\renewcommand{\headrulewidth}{0.4pt}
+\definecolor{Titre}{rgb}{0.09,0.21,0.36}
+\definecolor{Sous-titre}{rgb}{0.31,0.51,0.74}
+\usepackage{titlesec}
+
+\begin{document}
+%	\begin{titlepage}
+%		
+%		\begin{center}
+%			\Large République Algérienne Démocratique et Populaire\\
+%				\Large Ministère de l’Enseignement Supérieur et de la Recherche Scientifique \\
+%				\Large Université des Sciences et de la Technologie Houari Boumediene \\
+%					Faculté d'Informatique et d'Électronique \\
+%					Département d'Informatique 	\\[.25cm] \vspace*{\stretch{0.3}}  \textbf{Mémoire de Master}
+%			\vspace*{\stretch{0.3}}
+%			\begin{figure}[h]
+%				\centering
+%				\includegraphics[scale=0.7]{../Figures/USTHB.jpg}
+%			\end{figure}
+%			
+%			\vspace*{\stretch{0.3}}
+%			\Large \textbf{Filière: }Informatique \\[.25cm] \vspace*{\stretch{0.3}} 
+%			\Large\textbf{Spécialité:}{ Système Informatique Intelligent}
+%			\\
+%			\Large\textbf{Thème}
+%           	\HRule \\[0.4cm]
+%			{ \huge \bfseries  }
+%			\LARGE Développement d’un système multi-robots
+%			basé sur l’intelligence en essaim pour la détection de multiples cibles dans un environnement complexe et inconnu
+%			\HRule \\[1.5cm]
+%			
+%			\begin{minipage}{0.5\textwidth}
+%				\begin{flushleft}
+%					Sujet proposé par :\
+%					
+%				\end{flushleft}
+%				\begin{flushleft}\large
+%					Mme H.DRIAS\\
+%				\end{flushleft}
+%				
+%				\begin{flushleft}\large
+%					Soutenu le :25/juin/2019
+%				\end{flushleft}
+%			\end{minipage}%
+%			\begin{minipage}{0.5\textwidth}
+%				\begin{flushright}
+%					{Réalisé par:}\\
+%				\end{flushright}
+%				
+%				\begin{flushright} \large
+%					Hassina Safaa \textsc{MOULAI}\\
+%				\end{flushright}
+%				
+%				\begin{flushright} \large
+%					Naila Aziza \textsc{HOUACINE}\\
+%				\end{flushright}
+%				
+%			\end{minipage}
+%			\begin{flushleft}
+%				Devant le jury composé de :
+%			\end{flushleft}	
+%			
+%			\Large
+%			\begin{center}
+%				
+%				
+%				
+%				
+%				\begin{tabular}{lll}
+%					%  \hline
+%					% after \\: \hline or \cline{col1-col2} \cline{col3-col4} ...
+%					Mme x     & Présidente & USTHB\\
+%					Mme x    & Examinatrice  & USTHB\\
+%			
+%					
+%					% \hline
+%				\end{tabular}
+%			\end{center}
+%			
+%			\begin{center}
+%				\textbf{Binôme :081/2019}
+%			\end{center}
+%		\end{center}
+%	\end{titlepage}
+%\let\cleardoublepage\clearpage
+
+\end{document}
