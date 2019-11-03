@@ -1,1 +1,0 @@
-( ap-description  :name "RSHP" :ap-services (set ( ap-service  :name fipa.mts.mtp.http.std :type fipa.mts.mtp.http.std :addresses (sequence http://masterubunto-Inspiron-3521:7778/acc))))
